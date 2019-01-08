@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Vendimia | iEvoluciona</title>
+	<meta name="author" content="Matias Salinas">
+    <meta name="description" content="">
+    <meta name="keywords"  content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600,700" rel="stylesheet">
+    <!-- Full Page -->
+    <link rel="stylesheet" type="text/css" href="assets/css/fullpage.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/examples.css">
+    <!-- My Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+	<div id="fullpage">
+		<ul id="menu">
+		    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First slide</a></li>
+		    <li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
+		    <li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+		</ul>
+	    <div class="section active" id="section0">
+	    	<section class="front">
+	    		<img src="assets/images/evoluciona-logo.png">
+	    	</section>
+	    	<section class="evoluciona-intro">
+	    		<h2>la inmobiliaria</h2>
+	    		<div class="separation-line"></div>
+	    		<p>En Evoluciona desarrollamos proyectos inmobiliarios
+					alineados con las necesidades de la vida actual.
+					Nuestro objetivo es brindar una experiencia de vida con
+					altos estándares de calidad y funcionalidad.</p>		
+	    	</section>
+	    </div>
+	    <div class="section" id="section1">
+	        <video id="myVideo" loop muted data-autoplay>
+				<source src="assets/images/flowers.mp4" type="video/mp4">
+				<source src="assets/images/flowers.webm" type="video/webm">
+			</video>
+			<div class="layer">
+				<h2>proyecto Vendimia</h2>
+				<div class="separation-line-white"></div>
+				<img class="vendimia-logo-video" src="assets/images/vendimia-logo.png">
+			</div>
+	    </div>
+	    <div class="section" id="section2">
+	        <section class="origen-proyecto">
+	        	<h2>origen del proyecto</h2>
+				<div class="separation-line"></div>
+				<img class="plano-img" src="assets/images/plano.jpg">
+				<p>El proyecto Vendimia propone el desafío de insertar en la condición natural
+					escenográfica de la ladera del cerro Manquehue una plataforma de contemplación
+					del valle y la ciudad de Santiago desde un conjunto de departamentos tipo
+					penthouse, síntesis de la representación de los actos de una casa en la libertad y
+					seguridad del departamento, con grandes espacios y jardines en terrazas.</p>
+	        </section>
+	        <section class="equipo">
+	        	<h3>Construido por un equipo
+				interdisciplinario de excelencia</h3>
+				<div></div>
+				<p>Sabbagh, Arquitectos <br>
+				Enrique Concha, Diseño de interior <br>
+				Elizabeth Huyghe, Paisajista <br>
+				Christies Real Estate</p>
+	        </section>
+	    </div>
+	</div>
+
+	<script type="text/javascript" src="assets/js/scrolloverflow.min.js"></script>
+	<script type="text/javascript" src="assets/js/fullpage.js"></script>
+
+	<script type="text/javascript">
+	    var myFullpage = new fullpage('#fullpage', {
+	        verticalCentered: true,
+	        sectionsColor: ['white', 'black', 'white'],
+	        anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+	        menu: '#menu',
+	        scrollOverflow: true,
+	        scrollOverflowResetKey: true,
+	        lazyLoad: true,
+	        licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE'
+	    });
+	</script>
+	
+</body>
+</html>

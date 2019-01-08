@@ -1,0 +1,174 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Work Sans', sans-serif;
+}
+
+h2 {
+	font-size: 1.2em;
+	font-weight: 600;
+}
+
+p {
+	font-size: 1em;
+}
+
+
+.section{
+	text-align: center;
+	overflow: hidden;
+}
+
+.front {
+	background-image: url(../images/bkg1.jpg);
+	background-size: cover;
+	background-position: center center;
+	height: 100vh;
+}
+
+.front img {
+	padding-top: 40vh;
+}
+
+.evoluciona-intro {
+	padding: 8vh 10vw 20vh 10vw;
+}
+
+.evoluciona-intro h2 {
+	color: #7b6f65;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+.separation-line {
+	height: 2px;
+	background-color: #7b6f65;
+	margin: 10px 0 10px 0;
+}
+
+.evoluciona-intro p {
+	margin-top: 80px;
+	font-size: 1em;
+	color: #706f6f;
+	display: inline-block;
+	width: 100%;
+}
+
+#myVideo{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	top:0;
+	right:0;
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+		background-color: black; /* in case the video doesn't fit the whole page*/
+		background-image: /* our video */;
+		background-position: center center;
+		background-size: contain;
+		object-fit: cover; /*cover video background */
+		z-index:3;
+}
+
+	/* Layer with position absolute in order to have it over the video
+* --------------------------------------- */
+#section1 .layer{
+	position: absolute;
+	z-index: 4;
+	width: 100%;
+	left: 0;
+	top: 10vh;
+	padding: 0 10vw 0 10vw;
+	box-sizing: border-box;
+
+	/*
+	* Preventing flicker on some browsers
+	* See http://stackoverflow.com/a/36671466/1081396  or issue #183
+	*/
+	-webkit-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.layer h2  {
+	color: #fff;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+.separation-line-white {
+	height: 2px;
+	background-color: #fff;
+	margin: 10px 0 25vh 0;
+}
+
+.vendimia-logo-video {
+	width: 200px;
+}
+
+/*solves problem with overflowing video in Mac with Chrome */
+#section1{
+	overflow: hidden;
+}
+
+.origen-proyecto {
+	padding: 10vh 10vw;
+	display: block;
+}
+
+.origen-proyecto h2 {
+	color: #7b6f65;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+.plano-img {
+	width: 100%;
+	margin-top: 50px;
+}
+
+.origen-proyecto p {
+	width: 100%;
+	display: inline-block;
+	font-size: 1em;
+	text-align: left;
+}
+
+.equipo {
+	padding: 0 10vw;
+	text-align: left;
+}
+
+.equipo h3 {
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: 600;
+	color: #7b6f65;
+}
+
+.equipo div {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.equipo p {
+	margin-top: 10px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+/* Bottom menu
+* --------------------------------------- */
+#infoMenu li a {
+	color: #fff;
+}
+
+
+/* Hiding video controls
+* See: https://css-tricks.com/custom-controls-in-html5-video-full-screen/
+* --------------------------------------- */
+video::-webkit-media-controls {
+  display:none !important;
+}
