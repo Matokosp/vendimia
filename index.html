@@ -152,6 +152,15 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
 
+  	<script type="text/javascript">
+		// We listen to the resize event
+		window.addEventListener('resize', () => {
+		  // We execute the same script as before
+		  let vh = window.innerHeight * 0.01;
+		  document.documentElement.style.setProperty('--vh', `${vh}px`);
+		});
+	</script>
+
   	<!-- FlexSlider -->
 	<script defer src="assets/js/jquery.flexslider.js"></script>
 		<script type="text/javascript">
@@ -162,15 +171,6 @@
 		      $('body').removeClass('loading');
 		    }
 		  });
-		});
-	</script>
-
-	<script type="text/javascript">
-		// We listen to the resize event
-		window.addEventListener('resize', () => {
-		  // We execute the same script as before
-		  let vh = window.innerHeight * 0.01;
-		  document.documentElement.style.setProperty('--vh', `${vh}px`);
 		});
 	</script>
 
