@@ -172,6 +172,10 @@ p {
 	overflow: scroll;
 }
 
+.back {
+	z-index: -99;
+}
+
 #section3 .layer {
 	position: absolute;
 	z-index: 50;
