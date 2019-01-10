@@ -178,7 +178,7 @@ p {
 	top: 0;
 	left: 0;
 	width: 100%;
-	z-index: -99;
+	z-index: -5;
 }
 
 #section3 .layer {
@@ -192,7 +192,7 @@ p {
 }
 
 .info__casas {
-	padding: 110vh 10vw 10vh 10vw;
+	padding: 105vh 10vw 10vh 10vw;
 }
 
 .info__casas-item h3 {
