@@ -22,7 +22,8 @@ p {
 	background-image: url(../images/bkg1.jpg);
 	background-size: cover;
 	background-position: center center;
-	height: 100vh;
+	height: 100vh; 
+	height: calc(var(--vh, 1vh) * 100);
 }
 
 .front img {
@@ -172,7 +173,7 @@ p {
 	overflow: scroll;
 }
 
-.flexslider .back {
+.back {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -191,12 +192,7 @@ p {
 }
 
 .info__casas {
-	padding: 0 10vw;
-	height: 100%;
-}
-
-.info__casas-item {
-
+	padding: 110vh 10vw 10vh 10vw;
 }
 
 .info__casas-item h3 {
