@@ -16,7 +16,6 @@ p {
 
 .section{
 	text-align: center;
-	overflow: hidden;
 }
 
 .front {
@@ -27,7 +26,7 @@ p {
 }
 
 .front img {
-	padding-top: 40vh;
+	padding-top: 35vh;
 }
 
 .evoluciona-intro {
@@ -113,7 +112,7 @@ p {
 }
 
 .origen-proyecto {
-	padding: 10vh 10vw;
+	padding: 0 10vw;
 	display: block;
 }
 
@@ -136,7 +135,7 @@ p {
 }
 
 .equipo {
-	padding: 0 10vw;
+	padding: 50px 10vw 0 10vw;
 	text-align: left;
 }
 
@@ -158,6 +157,57 @@ p {
 	vertical-align: middle;
 }
 
+/*Adding background for the slides
+	* --------------------------------------- */
+#slide1{
+	/*background-image: url(assets/images/bg2.jpg);*/
+	background-color: salmon;
+}
+#slide2{
+	/*background-image: url(assets/images/bg5.jpg);*/
+	background-color: peru;
+}
+
+#section3 {
+	overflow: scroll;
+}
+
+#section3 .layer {
+	position: absolute;
+	z-index: 4;
+	width: 100%;
+	left: 0;
+	top: 5vh;
+	padding: 0 10vw 0 10vw;
+	box-sizing: border-box;
+}
+
+.info__casas {
+	padding: 0 10vw;
+}
+
+.info__casas-item {
+
+}
+
+.info__casas-item h3 {
+	font-size: 3.8em;
+	font-weight: 400;
+	color: #7b6f65;
+}
+
+.info__casas-item h4 {
+	font-size: 1.7em;	
+	color: #7b6f65;
+}
+
+.info__casas-item--separation {
+	height: 2px;
+	background-color: #7b6f65;
+	width: 30vw;
+	display: inline-block;
+	margin: 20px 0;
+}
 
 /* Bottom menu
 * --------------------------------------- */

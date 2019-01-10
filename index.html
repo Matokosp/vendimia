@@ -18,11 +18,11 @@
 
 <body>
 	<div id="fullpage">
-		<ul id="menu">
+		<!-- <ul id="menu">
 		    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First slide</a></li>
 		    <li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
 		    <li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
-		</ul>
+		</ul> -->
 	    <div class="section active" id="section0">
 	    	<section class="front">
 	    		<img src="assets/images/evoluciona-logo.png">
@@ -33,7 +33,7 @@
 	    		<p>En Evoluciona desarrollamos proyectos inmobiliarios
 					alineados con las necesidades de la vida actual.
 					Nuestro objetivo es brindar una experiencia de vida con
-					altos estándares de calidad y funcionalidad.</p>		
+					altos estándares de calidad y&nbsp;funcionalidad.</p>		
 	    	</section>
 	    </div>
 	    <div class="section" id="section1">
@@ -68,23 +68,106 @@
 				Christies Real Estate</p>
 	        </section>
 	    </div>
+	    <div class="section" id="section3">
+	        <div class="slide" id="slide1"><h3>Slide Backgrounds</h3></div>
+			<div class="slide" id="slide2"><h1>Totally customizable</h1></div>
+			<div class="layer">
+				<h2>vistas privilegiadas desde lo alto de Santiago</h2>
+				<div class="separation-line-white"></div>
+			</div>
+			<div class="info__casas">
+				<div class="info__casas-item">
+					<h3>10</h3>
+					<h4>Exclusivas <br> Unidades</h4>
+					<div class="info__casas-item--separation"></div>
+				</div>
+				<div class="info__casas-item">
+					<h3>2</h3>
+					<h4>Tipologías <br> de casas</h4>
+					<div class="info__casas-item--separation"></div>
+				</div>
+				<div class="info__casas-item">
+					<h3>3</h3>
+					<h4>Amplios <br> dormitorios</h4>
+					<div class="info__casas-item--separation"></div>
+				</div>
+				<div class="info__casas-item">
+					<h3>360</h3>
+					<h4>Mts. de altura <br> en recibos</h4>
+					<div class="info__casas-item--separation"></div>
+				</div>
+				<div class="info__casas-item">
+					<h3>400</h3>
+					<h4>Mts2 de <br> superficie útil</h4>
+				</div>
+			</div>
+	    </div>
+	<!--     <div class="section" id="section4">
+	        <section class="lugar-section">
+	        	<h2>te invitamos a vivir la ladera</h2>
+				<div class="separation-line"></div>
+				<img class="plano-img" src="assets/images/plano.jpg">
+				<p>El proyecto Vendimia propone el desafío de insertar en la condición natural
+					escenográfica de la ladera del cerro Manquehue una plataforma de contemplación
+					del valle y la ciudad de Santiago desde un conjunto de departamentos tipo
+					penthouse, síntesis de la representación de los actos de una casa en la libertad y
+					seguridad del departamento, con grandes espacios y jardines en terrazas.</p>
+	        </section>
+	        <section class="equipo">
+	        	<h3>Construido por un equipo
+				interdisciplinario de excelencia</h3>
+				<div></div>
+				<p>Sabbagh, Arquitectos <br>
+				Enrique Concha, Diseño de interior <br>
+				Elizabeth Huyghe, Paisajista <br>
+				Christies Real Estate</p>
+	        </section>
+	    </div> -->
 	</div>
 
+
+<!-- 	<script type="text/javascript" src="assets/js/moveSlideRight.js"></script> -->
 	<script type="text/javascript" src="assets/js/scrolloverflow.min.js"></script>
 	<script type="text/javascript" src="assets/js/fullpage.js"></script>
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.js"
+	  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	  crossorigin="anonymous"></script>
 
 	<script type="text/javascript">
 	    var myFullpage = new fullpage('#fullpage', {
 	        verticalCentered: true,
-	        sectionsColor: ['white', 'black', 'white'],
+	        sectionsColor: ['white', 'black', 'white', 'white'],
 	        anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
 	        menu: '#menu',
 	        scrollOverflow: true,
 	        scrollOverflowResetKey: true,
 	        lazyLoad: true,
-	        licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE'
+	        licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
 	    });
+
+	    fullpage_api.setScrollingSpeed(700);
+
+    	setInterval(function (){
+    		fullpage_api.moveSlideRight();
+    	}, 5000);  
+	 
 	</script>
+
+
+
+<!-- 	<script type="text/javascript">
+		$(document).ready(function () {
+		    $('#fullpage').fullpage({
+		        loopBottom: true,
+		        afterRender: function () {
+		            setInterval(function () {
+		                $.fn.fullpage.moveSlideRight();
+		            }, 1000);
+		        }
+		    });
+		});
+	</script> -->
 	
 </body>
 </html>
