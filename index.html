@@ -71,9 +71,10 @@
 	        </section>
 	    </div>
 	    <div class="section" id="section3">
-	        <!-- <div class="slide" id="slide1"><h3>Slide Backgrounds</h3></div>
-			<div class="slide" id="slide2"><h1>Totally customizable</h1></div> -->
-
+	        <div class="layer">
+				<h2>vistas privilegiadas desde lo alto de Santiago</h2>
+				<div class="separation-line-white"></div>
+			</div>
 			<div class="flexslider back">
 	          <ul class="slides">
 	            <li>
@@ -89,12 +90,7 @@
 	  	    	    <div style="background-color: green; width: 100%; height: 100vh; height: calc(var(--vh, 1vh) * 100);"></div>
   	    		</li>
 	          </ul>
-	        </div>
-
-			<div class="layer">
-				<h2>vistas privilegiadas desde lo alto de Santiago</h2>
-				<div class="separation-line-white"></div>
-			</div>
+	        </div>			
 			<div class="info__casas">
 				<div class="info__casas-item">
 					<h3>10</h3>
@@ -153,6 +149,10 @@
   	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
 
   	<script type="text/javascript">
+  		// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+		let vh = window.innerHeight * 0.01;
+		// Then we set the value in the --vh custom property to the root of the document
+		document.documentElement.style.setProperty('--vh', `${vh}px`);
 		// We listen to the resize event
 		window.addEventListener('resize', () => {
 		  // We execute the same script as before
@@ -182,7 +182,6 @@
 	        anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
 	        menu: '#menu',
 	        sectionSelector: '.section',
-	        scrolloverflowReset:true,
 	        scrollOverflow: true,
 	        lazyLoad: true,
 	        licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',

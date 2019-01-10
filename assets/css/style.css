@@ -172,7 +172,11 @@ p {
 	overflow: scroll;
 }
 
-.back {
+.flexslider .back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
 	z-index: -99;
 }
 
@@ -188,6 +192,7 @@ p {
 
 .info__casas {
 	padding: 0 10vw;
+	height: 100%;
 }
 
 .info__casas-item {
